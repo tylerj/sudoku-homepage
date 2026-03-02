@@ -648,6 +648,20 @@
       margin-top: var(--space-12);
     }
 
+    .community-disclaimer {
+      margin-top: var(--space-12);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+      line-height: 1.7;
+    }
+
+    .community-disclaimer p + p {
+      margin-top: var(--space-3);
+    }
+
     /* ===== CTA ===== */
     .cta-section {
       padding: var(--space-24) 0;
@@ -989,7 +1003,7 @@
 
           <div class="community-block animate-on-scroll">
             <h3>SudokuPad</h3>
-            <p>None of this would exist without <a href="https://sudokupad.app" target="_blank" rel="noopener noreferrer">SudokuPad</a>, the incredible puzzle solving platform built by our favorite developer, <a href="https://www.patreon.com/join/svencodes" target="_blank" rel="noopener noreferrer">Sven Neumann</a>. His work and innovation have given all of us a place to build, solve, and fall in love with puzzles. Sudoku Launchpad is meant to be a companion to that experience &mdash; a way to organize, replay, and get even more enjoyment out of every solve.</p>
+            <p>None of this would exist without <a href="https://sudokupad.app" target="_blank" rel="noopener noreferrer">SudokuPad</a>, the incredible puzzle solving platform built by our favorite developer, <a href="https://www.patreon.com/join/svencodes" target="_blank" rel="noopener noreferrer">Sven Neumann</a>. His work and innovation have given all of us a place to build, solve, and fall in love with puzzles. Sudoku Launchpad is meant to be a companion to that already delightful experience.</p>
           </div>
 
           <div class="community-block animate-on-scroll">
@@ -999,8 +1013,8 @@
 
           <div class="community-block animate-on-scroll">
             <h3>Cracking The Cryptic</h3>
-            <p>If you haven't discovered <a href="https://www.youtube.com/@CrackingTheCryptic" target="_blank" rel="noopener noreferrer">Cracking The Cryptic</a> yet, you're in for a treat. Mark and Simon have built a channel that's brought the joy of puzzle solving to millions, introducing us to a world of variant sudoku we didn't know we needed and now can't get enough of.</p>
-            <p>It's a wonderful feeling watching your replay alongside theirs and seeing the same deduction land at the exact same moment. That's a joy I want everyone to experience.</p>
+            <p>If you haven't discovered <a href="https://www.youtube.com/@CrackingTheCryptic" target="_blank" rel="noopener noreferrer">Cracking The Cryptic</a> yet, you're in for a treat. Mark and Simon have built something rare &mdash; a channel where two world-class solvers work through handcrafted puzzles with genuine wonder, celebrating the ingenuity of every setter along the way. They've turned millions of people on to variant sudoku, revealing an entire art form that most of us never knew existed behind a simple grid of numbers.</p>
+            <p>There's a wonderful feeling watching your replay alongside one of their solves and seeing the same deduction land at the exact same moment. That's a joy I want everyone to experience.</p>
           </div>
 
           <div class="community-block animate-on-scroll">
@@ -1012,6 +1026,13 @@
             <a href="https://discord.gg/BbN89j5" target="_blank" rel="noopener noreferrer" class="btn-secondary">
               Join us on Discord &rarr;
             </a>
+          </div>
+
+          <div class="community-disclaimer animate-on-scroll">
+            <p>Disclaimer: I used AI to help me find the right words for this page &mdash; I'm much better with code than prose. Every sentiment here is mine, carefully prompted, re-prompted, and hand tweaked until it said exactly what I meant.</p>
+            <p>In fact, it was written by Claude Opus 4.6. I'm sure we all have mixed emotions about its Puzzle Constructors section above &mdash; I made it "think" hard and research that one, before I realized the irony of it. Did I use that correctly? Like I said, I'm bad with words (this part is written by me).</p>
+            <p>Claude Code Opus 4.6 helped write most of the app as well &mdash; it knows its way around a web application much better than a variant sudoku construction.</p>
+            <p>P.S. &mdash; If you couldn't tell, it LOVES using em dashes &mdash; the things that are surrounding these words &mdash; so that's always a solid tell something was written by AI. &mdash;</p>
           </div>
         </div>
       </div>
@@ -1051,10 +1072,7 @@
         </svg>
         Sudoku Launchpad
       </div>
-      <div class="footer-links">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </div>
+      <p class="footer-disclaimer">Built with ❤️ in Chapel Hill, NC</p>
       <p class="footer-disclaimer">&copy; 2026 Sudoku Launchpad</p>
     </div>
   </footer>
