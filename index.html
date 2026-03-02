@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudoku Launchpad — Track, Replay, and Master Every Puzzle</title>
+  <title>Sudoku Launchpad — Solve, Sync, and Relive Every Puzzle</title>
   <meta name="description" content="Your companion app for Sudoku enthusiasts. Sync your progress from SudokuPad, watch solve replays alongside Cracking The Cryptic videos, and build your solving streak.">
   <meta name="theme-color" content="#7c3aed">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Sudoku Launchpad">
-  <meta property="og:description" content="Track, Replay, and Master Every Puzzle">
+  <meta property="og:description" content="Solve, Sync, and Relive Every Puzzle">
   <meta property="og:url" content="https://sudokulaunchpad.com">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
@@ -432,7 +432,7 @@
     }
 
     .feature-card.featured::before {
-      content: 'Star Feature';
+      content: 'Spotlight';
       position: absolute;
       top: var(--space-4);
       right: var(--space-4);
@@ -591,6 +591,61 @@
       border-radius: var(--radius-full);
       font-size: 0.8rem;
       font-weight: 600;
+    }
+
+    /* ===== Community ===== */
+    .community-section {
+      padding: var(--space-24) 0;
+    }
+
+    .community-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .community-inner h2 {
+      margin-bottom: var(--space-4);
+      text-align: center;
+    }
+
+    .community-inner .section-subtitle {
+      margin-bottom: var(--space-12);
+    }
+
+    .community-block {
+      margin-bottom: var(--space-10);
+    }
+
+    .community-block h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: var(--space-3);
+    }
+
+    .community-block p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    .community-block p + p {
+      margin-top: var(--space-3);
+    }
+
+    .community-block a {
+      color: var(--brand-primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .community-block a:hover {
+      text-decoration: underline;
+    }
+
+    .community-discord {
+      text-align: center;
+      margin-top: var(--space-12);
     }
 
     /* ===== CTA ===== */
@@ -777,10 +832,10 @@
             Your Sudoku Companion
           </div>
           <h1 class="heading-hero hero-title">
-            Track, Replay, and <span class="gradient-text">Master Every Puzzle</span>
+            Solve, Sync, and <span class="gradient-text">Relive Every Puzzle</span>
           </h1>
           <p class="text-lg text-muted hero-subtitle">
-            Sync your progress from SudokuPad, watch solve replays alongside Cracking The Cryptic videos, and build your solving streak.
+            Solve puzzles on SudokuPad, sync your progress to Launchpad, and watch your replays alongside your favorite YouTube creators.
           </p>
           <div class="hero-actions">
             <a href="https://app.sudokulaunchpad.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary-lg">
@@ -801,11 +856,55 @@
     <!-- ===== Features ===== -->
     <section class="section section-alt" id="features">
       <div class="container text-center">
-        <h2 class="heading-section">Everything You Need to Level Up</h2>
+        <h2 class="heading-section">Everything You Need In One Place</h2>
         <p class="section-subtitle">From synchronized video replays to cross-device puzzle syncing, Sudoku Launchpad has the tools to make every solve count.</p>
 
         <div class="features-grid">
-          <!-- Feature 1: Synchronized Video Replay (star feature) -->
+          <!-- Feature 1: SudokuPad Sync -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m-6 3.75 3 3m0 0 3-3m-3 3V1.5"/>
+              </svg>
+            </div>
+            <h3 class="heading-card">SudokuPad Sync</h3>
+            <p>Sync your puzzles from SudokuPad with the Chrome extension, or manually export and upload into Launchpad.</p>
+          </div>
+
+          <!-- Feature 2: Puzzle Library -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z"/>
+              </svg>
+            </div>
+            <h3 class="heading-card">Puzzle Library</h3>
+            <p>All your solves, organized in one place. Multiple attempts on the same puzzle each get their own replay record.</p>
+          </div>
+
+          <!-- Feature 3: Solve Replays -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.992 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182M21.015 4.356v4.992"/>
+              </svg>
+            </div>
+            <h3 class="heading-card">Solve Replays</h3>
+            <p>Play back any synced puzzle like a video. Watch your solve unfold move-by-move with full playback controls.</p>
+          </div>
+
+          <!-- Feature 4: YouTube Integration -->
+          <div class="feature-card animate-on-scroll">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/>
+              </svg>
+            </div>
+            <h3 class="heading-card">YouTube Integration</h3>
+            <p>Browse puzzles featured by Cracking The Cryptic and other top YouTube creators. Track which puzzles you've solved across every channel.</p>
+          </div>
+
+          <!-- Feature 5: Synchronized Video Replay (spotlight) -->
           <div class="feature-card featured animate-on-scroll">
             <div class="feature-icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -814,43 +913,10 @@
               </svg>
             </div>
             <h3 class="heading-card">Synchronized Video Replay</h3>
-            <p>Watch your solve replay side-by-side with the Cracking The Cryptic video. Playback syncs automatically &mdash; seek, speed, and play/pause stay in lockstep.</p>
+            <p>Watch your solve replay alongside the YouTube video. Replay speed adjusts so you finish together &mdash; seek and play/pause stay in lockstep.</p>
           </div>
 
-          <!-- Feature 2: Chrome Extension -->
-          <div class="feature-card animate-on-scroll">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m-6 3.75 3 3m0 0 3-3m-3 3V1.5"/>
-              </svg>
-            </div>
-            <h3 class="heading-card">SudokuPad Sync</h3>
-            <p>Sync your puzzles from SudokuPad with the Chrome extension, or upload your replays directly. Pick up where you left off on any device.</p>
-          </div>
-
-          <!-- Feature 3: CTC Integration -->
-          <div class="feature-card animate-on-scroll">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/>
-              </svg>
-            </div>
-            <h3 class="heading-card">Cracking The Cryptic Integration</h3>
-            <p>Browse puzzles featured by Cracking The Cryptic and other top YouTube puzzle creators. Track which puzzles you've solved across every channel.</p>
-          </div>
-
-          <!-- Feature 4: Statistics & Tracking -->
-          <div class="feature-card animate-on-scroll">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/>
-              </svg>
-            </div>
-            <h3 class="heading-card">Statistics &amp; Tracking</h3>
-            <p>Monitor your total solves, completion rate, and best times. Track your progress over the last 30 days and build solving streaks.</p>
-          </div>
-
-          <!-- Feature 5: Calendar Views -->
+          <!-- Feature 6: Calendar Views -->
           <div class="feature-card animate-on-scroll">
             <div class="feature-icon">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -858,18 +924,7 @@
               </svg>
             </div>
             <h3 class="heading-card">Calendar Views</h3>
-            <p>See your solving history at a glance. Color-coded calendars show completed puzzles across every difficulty level.</p>
-          </div>
-
-          <!-- Feature 6: NYT Daily Puzzles -->
-          <div class="feature-card animate-on-scroll">
-            <div class="feature-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"/>
-              </svg>
-            </div>
-            <h3 class="heading-card">NYT Daily Puzzles</h3>
-            <p>Browse Easy, Medium, and Hard puzzles from the New York Times archive stretching back to November 2023, with new puzzles added daily.</p>
+            <p>See your solving history at a glance. Color-coded calendars show which puzzles you've solved and which ones you still need to tackle.</p>
           </div>
         </div>
       </div>
@@ -884,18 +939,18 @@
         <div class="steps">
           <div class="step animate-on-scroll">
             <div class="step-number">1</div>
-            <h3>Sync</h3>
-            <p>Install the Chrome extension and sync your puzzles from SudokuPad with one click.</p>
+            <h3>Solve</h3>
+            <p>Browse puzzles from YouTube and beyond, then launch directly into SudokuPad to solve.</p>
           </div>
           <div class="step animate-on-scroll">
             <div class="step-number">2</div>
-            <h3>Solve</h3>
-            <p>Browse puzzles from Cracking The Cryptic or the NYT archive and launch directly into SudokuPad.</p>
+            <h3>Sync</h3>
+            <p>Sync your puzzles from SudokuPad with the Chrome extension, or upload your replay exports manually.</p>
           </div>
           <div class="step animate-on-scroll">
             <div class="step-number">3</div>
-            <h3>Track</h3>
-            <p>Your progress saves automatically. Review synced replays alongside videos and watch your stats grow.</p>
+            <h3>Relive</h3>
+            <p>Play back your solves move-by-move, or watch them synchronized alongside the YouTube video.</p>
           </div>
         </div>
       </div>
@@ -919,6 +974,44 @@
           <div class="preview-card animate-on-scroll">
             <img src="images/stats.svg" alt="Profile page with solve statistics" width="600" height="400" loading="lazy">
             <span class="preview-label">Statistics &amp; Tracking</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Community ===== -->
+    <section class="community-section section" id="community">
+      <div class="container">
+        <div class="community-inner">
+          <h2 class="heading-section">Built on What We Love</h2>
+
+          <p class="section-subtitle">I'm grateful for this community. Sudoku Launchpad is my way of giving back.</p>
+
+          <div class="community-block animate-on-scroll">
+            <h3>SudokuPad</h3>
+            <p>None of this would exist without <a href="https://sudokupad.app" target="_blank" rel="noopener noreferrer">SudokuPad</a>, the incredible puzzle solving platform built by our favorite developer, <a href="https://www.patreon.com/join/svencodes" target="_blank" rel="noopener noreferrer">Sven Neumann</a>. His work and innovation have given all of us a place to build, solve, and fall in love with puzzles. Sudoku Launchpad is meant to be a companion to that experience &mdash; a way to organize, replay, and get even more enjoyment out of every solve.</p>
+          </div>
+
+          <div class="community-block animate-on-scroll">
+            <h3>Puzzle Constructors</h3>
+            <p>Behind every puzzle on this platform is a human being who handcrafted it &mdash; not a computer, but a person who carefully designed a logical journey with moments of surprise, beauty, and that incredible feeling when everything clicks. The variant sudoku community is home to some of the most creative minds you'll encounter anywhere, and they share their work generously with all of us. Sudoku Launchpad is one small way to give these setters and their craft more of the spotlight they deserve.</p>
+          </div>
+
+          <div class="community-block animate-on-scroll">
+            <h3>Cracking The Cryptic</h3>
+            <p>If you haven't discovered <a href="https://www.youtube.com/@CrackingTheCryptic" target="_blank" rel="noopener noreferrer">Cracking The Cryptic</a> yet, you're in for a treat. Mark and Simon have built a channel that's brought the joy of puzzle solving to millions, introducing us to a world of variant sudoku we didn't know we needed and now can't get enough of.</p>
+            <p>It's a wonderful feeling watching your replay alongside theirs and seeing the same deduction land at the exact same moment. That's a joy I want everyone to experience.</p>
+          </div>
+
+          <div class="community-block animate-on-scroll">
+            <h3>Community Driven</h3>
+            <p>I build apps like this because I want to use them myself, but the ultimate joy comes from all of you using it. Your feedback and ideas directly influence what gets built next, so find me over on Discord and let's build this thing together!</p>
+          </div>
+
+          <div class="community-discord animate-on-scroll">
+            <a href="https://discord.gg/BbN89j5" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Join us on Discord &rarr;
+            </a>
           </div>
         </div>
       </div>
@@ -962,10 +1055,7 @@
         <a href="#">Privacy</a>
         <a href="#">Terms</a>
       </div>
-      <p class="footer-disclaimer">
-        Sudoku Launchpad is not affiliated with or endorsed by The New York Times or Cracking The Cryptic.
-      </p>
-      <p class="footer-disclaimer">&copy; 2024&ndash;2026 Sudoku Launchpad</p>
+      <p class="footer-disclaimer">&copy; 2026 Sudoku Launchpad</p>
     </div>
   </footer>
 
