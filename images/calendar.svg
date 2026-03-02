@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#232636"/>
+      <stop offset="100%" style="stop-color:#2a2d3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" fill="url(#bg)" rx="16"/>
+  <rect x="24" y="24" width="672" height="48" rx="8" fill="#2f3245"/>
+  <circle cx="52" cy="48" r="12" fill="#8b5cf6"/>
+  <text x="360" y="220" text-anchor="middle" fill="#f0f2ff" font-family="system-ui,sans-serif" font-size="32" font-weight="700">Calendar View</text>
+  <text x="360" y="260" text-anchor="middle" fill="#8b90a8" font-family="system-ui,sans-serif" font-size="18">Color-coded solving history</text>
+  <text x="360" y="300" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with actual screenshot</text>
+</svg>

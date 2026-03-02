@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Sudoku Launchpad</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('sudoku-lp-theme') || 'system';
+      var resolved = (saved === 'light' || saved === 'dark') ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', resolved);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f9fafb; --text: #1a1a2e; --text-muted: #6b7280; --brand: #7c3aed;
+    }
+    [data-theme="dark"] {
+      --bg: #2a2d3a; --text: #f0f2ff; --text-muted: #8b90a8; --brand: #8b5cf6;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg); color: var(--text);
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh; text-align: center; padding: 2rem;
+    }
+    h1 { font-size: 6rem; font-weight: 800; line-height: 1; color: var(--brand); }
+    p { color: var(--text-muted); margin: 1rem 0 2rem; font-size: 1.1rem; }
+    a {
+      display: inline-block; background: var(--brand); color: #fff;
+      padding: 0.75rem 2rem; border-radius: 0.75rem; text-decoration: none;
+      font-weight: 600; transition: opacity 0.15s;
+    }
+    a:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>404</h1>
+    <p>This page doesn't exist. Maybe you were looking for the app?</p>
+    <a href="/">Go Home</a>
+  </div>
+</body>
+</html>

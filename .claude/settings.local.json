@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -r \"defmodule\\\\|@moduledoc\" /Users/tylerjohnson/code/sudoku/lib/sudoku_web/live/*.ex)",
+      "Bash(lsof -i :4000)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:oklch.com)",
+      "WebFetch(domain:atmos.style)",
+      "Bash(grep -r \"primary_video\\\\|puzzle_video\\\\|replays\" ~/code/sudoku/priv/repo/migrations/*.exs)",
+      "Bash(npx --yes puppeteer --version)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless=new --disable-gpu --screenshot=\"/Users/tylerjohnson/code/sudoku_homepage/images/homepage.png\" --window-size=1440,900 \"http://localhost:4000\")",
+      "Bash(npx --yes playwright@latest install chromium)",
+      "Bash(node /Users/tylerjohnson/code/sudoku_homepage/generate-placeholders.mjs)",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}
