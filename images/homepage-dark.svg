@@ -10,5 +10,5 @@
   <circle cx="52" cy="48" r="12" fill="#8b5cf6"/>
   <text x="720" y="430" text-anchor="middle" fill="#f0f2ff" font-family="system-ui,sans-serif" font-size="32" font-weight="700">Homepage</text>
   <text x="720" y="470" text-anchor="middle" fill="#8b90a8" font-family="system-ui,sans-serif" font-size="18">Today's NYT Puzzles | Latest CTC Puzzles | My Solves</text>
-  <text x="720" y="510" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with actual screenshot</text>
+  <text x="720" y="510" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with dark-mode screenshot</text>
 </svg>

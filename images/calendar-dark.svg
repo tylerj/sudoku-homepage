@@ -8,7 +8,7 @@
   <rect width="720" height="480" fill="url(#bg)" rx="16"/>
   <rect x="24" y="24" width="672" height="48" rx="8" fill="#2f3245"/>
   <circle cx="52" cy="48" r="12" fill="#8b5cf6"/>
-  <text x="360" y="220" text-anchor="middle" fill="#f0f2ff" font-family="system-ui,sans-serif" font-size="32" font-weight="700">Statistics</text>
-  <text x="360" y="260" text-anchor="middle" fill="#8b90a8" font-family="system-ui,sans-serif" font-size="18">Total Solves | Completion Rate | Streaks</text>
-  <text x="360" y="300" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with actual screenshot</text>
+  <text x="360" y="220" text-anchor="middle" fill="#f0f2ff" font-family="system-ui,sans-serif" font-size="32" font-weight="700">Calendar View</text>
+  <text x="360" y="260" text-anchor="middle" fill="#8b90a8" font-family="system-ui,sans-serif" font-size="18">Color-coded solving history</text>
+  <text x="360" y="300" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with dark-mode screenshot</text>
 </svg>

@@ -10,5 +10,5 @@
   <circle cx="52" cy="48" r="12" fill="#8b5cf6"/>
   <text x="720" y="385" text-anchor="middle" fill="#f0f2ff" font-family="system-ui,sans-serif" font-size="32" font-weight="700">Synchronized Video Replay</text>
   <text x="720" y="425" text-anchor="middle" fill="#8b90a8" font-family="system-ui,sans-serif" font-size="18">YouTube Video + Puzzle Replay Side by Side</text>
-  <text x="720" y="465" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with actual screenshot</text>
+  <text x="720" y="465" text-anchor="middle" fill="#3f4358" font-family="system-ui,sans-serif" font-size="14">Replace with dark-mode screenshot</text>
 </svg>
