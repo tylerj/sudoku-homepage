@@ -158,6 +158,26 @@
       line-height: 1.2;
       letter-spacing: -0.01em;
       color: var(--text-primary);
+      position: relative;
+    }
+
+    .heading-anchor {
+      position: absolute;
+      right: 100%;
+      padding-right: var(--space-2);
+      color: var(--text-muted);
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity var(--transition-fast);
+      font-weight: 400;
+    }
+
+    .heading-anchor:hover {
+      color: var(--brand-primary);
+    }
+
+    .heading-section:hover .heading-anchor {
+      opacity: 1;
     }
 
     .heading-card {
@@ -877,7 +897,7 @@
     <!-- ===== Features ===== -->
     <section class="section section-alt" id="features">
       <div class="container text-center">
-        <h2 class="heading-section">Everything You Need In One Place</h2>
+        <h2 class="heading-section"><a class="heading-anchor" href="#features">#</a>Everything You Need In One Place</h2>
         <p class="section-subtitle">From synchronized video replays to cross-device puzzle syncing, Sudoku Launchpad has the tools to make every solve count.</p>
 
         <div class="features-grid">
@@ -954,7 +974,7 @@
     <!-- ===== How It Works ===== -->
     <section class="section" id="how-it-works">
       <div class="container text-center">
-        <h2 class="heading-section">How It Works</h2>
+        <h2 class="heading-section"><a class="heading-anchor" href="#how-it-works">#</a>How It Works</h2>
         <p class="section-subtitle">Get started in three simple steps.</p>
 
         <div class="steps">
@@ -980,7 +1000,7 @@
     <!-- ===== App Preview (Screenshots) ===== -->
     <section class="section section-alt" id="preview">
       <div class="container text-center">
-        <h2 class="heading-section">See It In Action</h2>
+        <h2 class="heading-section"><a class="heading-anchor" href="#preview">#</a>See It In Action</h2>
         <p class="section-subtitle">A closer look at the features that make Sudoku Launchpad your go-to solving companion.</p>
 
         <div class="preview-grid">
@@ -1007,41 +1027,45 @@
     <section class="community-section section" id="community">
       <div class="container">
         <div class="community-inner">
-          <h2 class="heading-section">Built on What We Love</h2>
+          <h2 class="heading-section"><a class="heading-anchor" href="#community">#</a>Built on What We Love</h2>
 
           <p class="section-subtitle">I'm grateful for this community. Sudoku Launchpad is my way of giving back.</p>
 
           <div class="community-block animate-on-scroll">
             <h3>SudokuPad</h3>
-            <p>None of this would exist without <a href="https://sudokupad.app" target="_blank" rel="noopener noreferrer">SudokuPad</a>, the incredible puzzle solving platform built by our favorite developer, <a href="https://www.patreon.com/join/svencodes" target="_blank" rel="noopener noreferrer">Sven Neumann</a>. His work and innovation have given all of us a place to build, solve, and fall in love with puzzles. Sudoku Launchpad is meant to be a companion to that already delightful experience.</p>
+            <p>None of this would exist without <a href="https://sudokupad.app" target="_blank" rel="noopener noreferrer">SudokuPad</a>, the incredible puzzle solving platform built by our favorite developer, <a href="https://svencodes.com/" target="_blank" rel="noopener noreferrer">Sven Neumann</a>. His work and innovation have given all of us a place to build, solve, and fall in love with variant sudoku. Sudoku Launchpad is a complement to that already delightful experience.</p>
           </div>
 
           <div class="community-block animate-on-scroll">
             <h3>Puzzle Constructors</h3>
-            <p>Behind every puzzle on this platform is a human being who handcrafted it &mdash; not a computer, but a person who carefully designed a logical journey with moments of surprise, beauty, and that incredible feeling when everything clicks. The variant sudoku community is home to some of the most creative minds you'll encounter anywhere, and they share their work generously with all of us. Sudoku Launchpad is one small way to give these setters and their craft more of the spotlight they deserve.</p>
+            <p>Behind (nearly) every puzzle on this platform is a human being who handcrafted it &mdash; not a computer, but a person who carefully designed a logical journey with moments of surprise, beauty, and that incredible feeling when everything clicks. The variant sudoku community is home to some of the most creative minds you'll encounter anywhere, and they share their work generously with all of us. Sudoku Launchpad is one small way to give these setters and their craft more of the spotlight they deserve.</p>
           </div>
 
           <div class="community-block animate-on-scroll">
             <h3>Cracking The Cryptic</h3>
-            <p>If you haven't discovered <a href="https://www.youtube.com/@CrackingTheCryptic" target="_blank" rel="noopener noreferrer">Cracking The Cryptic</a> yet, you're in for a treat. Mark and Simon have built something rare &mdash; a channel where two world-class solvers work through handcrafted puzzles with genuine wonder, celebrating the ingenuity of every setter along the way. They've turned millions of people on to variant sudoku, revealing an entire art form that most of us never knew existed behind a simple grid of numbers.</p>
+            <p>If you haven't discovered <a href="https://www.youtube.com/@CrackingTheCryptic" target="_blank" rel="noopener noreferrer">Cracking The Cryptic</a> yet, you're in for a treat. Mark and Simon have built something rare &mdash; a channel where two world-class solvers work through handcrafted puzzles with genuine wonder, celebrating the ingenuity of every setter along the way. What I appreciate most is the patience they bring to every solve, talking through every logical step so that newcomers can follow along and experienced solvers still pick up something new. They've introduced countless people to variant sudoku, revealing an entire art form that most of us never knew existed behind a simple grid of numbers.</p>
             <p>There's a wonderful feeling watching your replay alongside one of their solves and seeing the same deduction land at the exact same moment. That's a joy I want everyone to experience.</p>
           </div>
 
           <div class="community-block animate-on-scroll">
             <h3>Community Driven</h3>
-            <p>I build apps like this because I want to use them myself, but the ultimate joy comes from all of you using it. Your feedback and ideas directly influence what gets built next, so find me over on Discord and let's build this thing together!</p>
+            <p>I build apps like this because I want to use them myself, but the ultimate joy comes from all of you using it. Your feedback and ideas directly influence what gets built next, so find me over on the Cracking the Cryptic Discord and let's build this thing together!</p>
           </div>
 
           <div class="community-discord animate-on-scroll">
             <a href="https://discord.gg/BbN89j5" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-              Join us on Discord &rarr;
+              Join CTC on Discord &rarr;
             </a>
           </div>
 
           <div class="community-disclaimer animate-on-scroll">
-            <p>Disclaimer: I used AI to help me find the right words for this page &mdash; I'm much better with code than prose. Every sentiment here is mine, carefully prompted, re-prompted, and hand tweaked until it said exactly what I meant.</p>
-            <p>In fact, it was written by Claude Opus 4.6. I'm sure we all have mixed emotions about its Puzzle Constructors section above &mdash; I made it "think" hard and research that one, before I realized <a href="https://www.youtube.com/watch?v=lRoIHses5nM" target="_blank" rel="noopener noreferrer">the irony</a> of it. Did I use that correctly? Like I said, I'm bad with words (this part is written by me).</p>
+            <p>Disclaimer: I used AI to help me build this page and find the right words for it &mdash; I'm much better with code than prose. Every sentiment here is mine, carefully prompted, re-prompted, and hand tweaked until it reflects exactly what I feel.</p>
+            <p>In fact, the AI model I used was none other than our friend Claude Opus 4.6. Given that, I'm sure we all have mixed emotions about its Puzzle Constructors section above &mdash; I made it "think" hard and research that one, before I realized <a href="https://www.youtube.com/watch?v=lRoIHses5nM" target="_blank" rel="noopener noreferrer">the irony</a> of it. Did I use that correctly? Like I said, I'm bad with words (this disclaimer is written by me).</p>
             <p>Claude Code Opus 4.6 helped write most of the app as well &mdash; it knows its way around a web application much better than a <a href="https://www.youtube.com/watch?v=uK4MaszybIM" target="_blank" rel="noopener noreferrer">variant sudoku construction</a>.</p>
+            <p>Like many of you, I'm still figuring out how AI fits into our lives. As a software engineer, it is creating huge waves in my world. Its capabilities are astounding, but I strongly believe that's only true when it's in the hands of a human who is already capable of doing what we are asking of it. I am a capable software engineer, and with its help, I feel like I have superpowers. If you don't know the craft behind what you're asking it to do, the results will not be quality or sustainable.</p>
+            <p>I believe the same will be true in the world of puzzle construction. The puzzles our constructors create (or "discover", as I've heard it said &mdash; love that) can not be accomplished by a machine with the same thought and care. That will always be true. Even with Claude at my disposal, I would never attempt to craft a puzzle that compares to those provided by this community. It's not possible.</p>
+            <p>However, something that surely takes our setters many hours to do on their own can likely become much more efficient with a powerful assistant. That's how it works with coding.</p>
+            <p>For now, I'm trying to embrace AI and find the good in it, and I believe of all the companies involved in its evolution, Anthropic are the good guys (if there are any).</p>
             <p>P.S. &mdash; If you couldn't tell, it LOVES using em dashes &mdash; the things that are surrounding these words &mdash; so that's always a solid tell something was written by AI. &mdash;</p>
           </div>
         </div>
@@ -1052,7 +1076,7 @@
     <section class="cta-section section" id="cta">
       <div class="container">
         <div class="cta-inner">
-          <h2 class="heading-section">Ready to Level Up Your Sudoku?</h2>
+          <h2 class="heading-section"><a class="heading-anchor" href="#cta">#</a>Ready to Level Up Your Sudoku?</h2>
           <p class="text-body">Join Sudoku Launchpad and never lose track of a puzzle again.</p>
           <div class="cta-buttons">
             <a href="https://app.sudokulaunchpad.com" target="_blank" rel="noopener noreferrer" class="btn-primary btn-primary-lg">
