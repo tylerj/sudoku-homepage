@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudoku Launchpad — Solve, Sync, and Relive Every Puzzle</title>
-  <meta name="description" content="Your companion app for Sudoku enthusiasts. Sync your progress from SudokuPad, watch solve replays alongside Cracking The Cryptic videos, and build your solving streak.">
+  <title>Sudoku Launchpad - Solve, Sync, and Relive Every Puzzle</title>
+  <meta name="description" content="Solve puzzles on SudokuPad, sync your progress to Launchpad, and relive every solve with move-by-move replays synchronized alongside YouTube videos.">
   <meta name="theme-color" content="#7c3aed">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
@@ -803,6 +803,80 @@
       font-size: clamp(1rem, 2vw, 1.1rem);
     }
 
+    /* ===== Chrome Extension ===== */
+    .extension-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-12);
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .extension-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-16);
+      }
+    }
+
+    .extension-content h2 {
+      text-align: left;
+    }
+
+    .extension-content .section-subtitle {
+      text-align: left;
+      margin: var(--space-4) 0 0;
+      max-width: none;
+    }
+
+    .extension-features {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-6);
+      margin-top: var(--space-10);
+    }
+
+    .extension-feature {
+      display: flex;
+      gap: var(--space-4);
+    }
+
+    .extension-feature-icon {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-lg);
+      background: var(--brand-primary-subtle);
+      color: var(--brand-primary);
+    }
+
+    .extension-feature-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .extension-feature h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: var(--space-1);
+    }
+
+    .extension-feature p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .extension-visual img {
+      width: 100%;
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-xl);
+      border: 1px solid var(--border);
+    }
+
     /* ===== Responsive nav ===== */
     @media (max-width: 480px) {
       .nav-cta-text { display: none; }
@@ -909,7 +983,7 @@
               </svg>
             </div>
             <h3 class="heading-card">SudokuPad Sync</h3>
-            <p>Sync your puzzles from SudokuPad with the Chrome extension, or manually export and upload into Launchpad.</p>
+            <p>Auto-sync your puzzles from SudokuPad with the Chrome extension, or manually export and upload into Launchpad.</p>
           </div>
 
           <!-- Feature 2: Puzzle Library -->
@@ -997,8 +1071,84 @@
       </div>
     </section>
 
+    <!-- ===== Chrome Extension ===== -->
+    <section class="section section-alt" id="extension">
+      <div class="container">
+        <div class="extension-inner">
+          <div class="extension-content">
+            <h2 class="heading-section"><a class="heading-anchor" href="#extension">#</a>Seamless Integration</h2>
+            <p class="section-subtitle">Install the extension for effortless syncing. It works quietly alongside SudokuPad, keeping Launchpad up to date while you focus on solving.</p>
+
+            <div class="extension-features">
+              <div class="extension-feature animate-on-scroll">
+                <div class="extension-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.652a3.75 3.75 0 0 1 0-5.304m5.304 0a3.75 3.75 0 0 1 0 5.304m-7.425 2.121a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Live Auto-Sync</h3>
+                  <p>Stream updates to Sudoku Launchpad in real time as you solve. Never forget to sync again.</p>
+                </div>
+              </div>
+
+              <div class="extension-feature animate-on-scroll">
+                <div class="extension-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Solve History</h3>
+                  <p>View and load every past solve for each puzzle, right from the extension. Pick up where you left off or revisit an old attempt.</p>
+                </div>
+              </div>
+
+              <div class="extension-feature animate-on-scroll">
+                <div class="extension-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Quick Links to Launchpad</h3>
+                  <p>Jump directly to any puzzle in Sudoku Launchpad with one click. No searching, no copy-pasting.</p>
+                </div>
+              </div>
+
+              <div class="extension-feature animate-on-scroll">
+                <div class="extension-feature-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>Floating Overlay</h3>
+                  <p>A compact floating button on SudokuPad gives you visible sync feedback and instant access to all extension features without leaving the page.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="extension-visual animate-on-scroll">
+            <img src="images/extension-light.svg" alt="Chrome extension popup showing auto-sync and solve history" class="img-light" width="560" height="480" loading="lazy">
+            <img src="images/extension-dark.svg" alt="Chrome extension popup showing auto-sync and solve history" class="img-dark" width="560" height="480" loading="lazy">
+            <div style="text-align: center; margin-top: var(--space-8);">
+              <a href="#" class="btn-primary btn-primary-lg" id="extension-cta-link">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/>
+                </svg>
+                Get the Extension
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== App Preview (Screenshots) ===== -->
-    <section class="section section-alt" id="preview">
+    <section class="section" id="preview">
       <div class="container text-center">
         <h2 class="heading-section"><a class="heading-anchor" href="#preview">#</a>See It In Action</h2>
         <p class="section-subtitle">A closer look at the features that make Sudoku Launchpad your go-to solving companion.</p>
